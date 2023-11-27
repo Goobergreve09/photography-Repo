@@ -177,10 +177,9 @@ justify-content: space-evenly;
 
 
 
-
 .navbar {
     background-color: #424949;
-    position: relative;
+    position: fixed;
     /* Change to relative */
     z-index: 2;
     /* Place it above the background photo */
