@@ -1,11 +1,11 @@
 #background-photo {
-  background-image:  url("Images/DSC_0042.jpg"); /* Specify the image URL */
+  background-image:  url("Images/DSC_0394.jpg"); /* Specify the image URL */
   background-size: cover; /* This will make the image cover the entire element */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image within the element */
   /* You can also specify a fixed width and height for the element itself if needed */
   width: 100%; /* Adjust the width as needed */
-  height: 890px; /* Adjust the height as needed */
+  height: 100vh; /* Adjust the height as needed */
 
   display: flex; /* Use flexbox layout */
   justify-content: center; /* Horizontally center the content */
@@ -16,13 +16,14 @@
 #background-photo h1 {
   color: white;
   font-size: 75px;
+  top:100px;
 
 }
 
 
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   z-index: 2;
 }
@@ -44,6 +45,7 @@
 .navbar-toggler-icon {
   filter: invert(1);
 }
+
 #camera-clipart {
   max-width: 175px;
 
@@ -55,7 +57,6 @@
 
 #png-me {
     max-width: 100%;
-    position: absolute;
     bottom: 0;
     left: 0;
     right: 600px;
@@ -63,7 +64,7 @@
     justify-content: center;
   }
 #png-me img {
-  width:400px;
+  max-width:400px;
 
 }
 
@@ -93,17 +94,15 @@ top:25%;
 
 #white-background {
   background-color:#424949;
-  width: 600px;
-  height: 800px;
-  opacity: 70%;
-  position: absolute;
- bottom: 2%;
-  right:2%;
-  z-index: 0;
-  border-radius: 20px;
-  /* Adjust other properties as needed */
-}
 
+  width: 100%;
+  height: 100%;
+    opacity: 70%;
+    position: fixed;
+   z-index: 0;
+
+    /* Adjust other properties as needed */
+  }
 
   h1 {
     position: absolute;
@@ -113,6 +112,7 @@ top:25%;
     z-index: 1; /* Ensure the h1 is above the white background */
     font-family: 'Great Vibes', cursive;
     font-weight: lighter;
+    font-size: 42px;
   
 
   }
@@ -177,45 +177,17 @@ width: 125px;
     color: black;
   }
 
-
-
-/* .card .btn {
-  background-color: #145a32;
-  border: none;
+  @media screen and (max-width: 450px) and (min-width:350px){
+    #p-container {
+      font-size: 16px;
+      text-align: center;
+    }
+    #background-photo h1 {
+  font-size:48px;
+  right:50px;
 }
-
-#card-1 {
-  display: flex;
-  max-width: 1000px;
-  max-height: 1300px;
-  position: relative;
+#carouselExampleCaptions {
+  width: 85%;
+  left: 0%;
 }
-
-#card-1 .card {
-  left: 40%;
-  top: 50px;
-}
-#card-1 img {
-  height: 300px;
-  width: 300px;
-}
-
-#card-2 {
-  display: flex;
-  max-width: 1000px;
-}
-
-#card-2 .card {
-  left: 5%;
-  bottom: 150px;
-}
-
-#card-3 {
-  display: flex;
-  max-width: 1000px;
-}
-
-#card-3 .card {
-  left: 480px;
-  bottom: 150px;
-} */
+  }

@@ -203,6 +203,10 @@ justify-content: space-evenly;
 .navbar-toggler-icon {
     filter: invert(1);
   }
+  .dropdown-menu {
+    transition: background-color 0.4s ease /* Adjust the duration and easing function as needed */
+  }
+  
 .dropdown-menu a {
     color: black; /* Replace 'your-text-color' with the desired text color code or name */
     padding-top:10px;
