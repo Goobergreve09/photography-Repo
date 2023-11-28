@@ -22,7 +22,9 @@
 
 
 .navbar {
-  background-color: #424949;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 2;
 }
 
 .nav-item {
@@ -39,9 +41,12 @@
   color: #f5cba7;
   font-weight: bold;
 }
-
+.navbar-toggler-icon {
+  filter: invert(1);
+}
 #camera-clipart {
-  max-width: 100px;
+  max-width: 175px;
+
 }
 #camera-clipart img {
   width: 50%;

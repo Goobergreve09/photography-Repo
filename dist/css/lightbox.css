@@ -203,6 +203,4 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-.glue a[data-lightbox]::after {
-  font-size: 16px; /* Adjust the font size as needed */
-}
+

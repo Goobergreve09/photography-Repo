@@ -178,7 +178,7 @@ justify-content: space-evenly;
 
 
 .navbar {
-    background-color: #424949;
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     /* Change to relative */
     z-index: 2;
@@ -200,6 +200,9 @@ justify-content: space-evenly;
     color: #f5cba7;
     font-weight: bold;
 }
+.navbar-toggler-icon {
+    filter: invert(1);
+  }
 .dropdown-menu a {
     color: black; /* Replace 'your-text-color' with the desired text color code or name */
     padding-top:10px;
@@ -212,7 +215,8 @@ justify-content: space-evenly;
   }
 
 #camera-clipart {
-    max-width: 100px;
+    max-width: 175px;
+
 }
 
 #camera-clipart img {
