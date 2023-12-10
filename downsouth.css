@@ -83,6 +83,10 @@ header img {
 
 }
 
+.numberNine {
+padding-top: 200px;
+margin: auto;
+}
 .leconteRow {
     display: flex;
 align-items: center;

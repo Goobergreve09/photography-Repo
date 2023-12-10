@@ -133,7 +133,7 @@ top:25%;
 
   #fbLogo {
     position: absolute;
-    right: 18%; /* Adjust the right value as needed */
+    right: 20%; /* Adjust the right value as needed */
     bottom: 44%; /* Adjust the bottom value as needed */
     z-index: 1; /* Ensure the Facebook image is above other elements */
   }
@@ -190,4 +190,13 @@ width: 125px;
   width: 85%;
   left: 0%;
 }
+#igLogo {
+  right: 30%; 
+  bottom: 46%;
+}
+#fbLogo {
+  right: 60%; 
+  bottom: 46%;
+}
+
   }
