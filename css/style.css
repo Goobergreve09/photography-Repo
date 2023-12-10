@@ -1,5 +1,5 @@
 #background-photo {
-  background-image:  url("Images/DSC_0394.jpg"); /* Specify the image URL */
+  background-image:  url("../Images/DSC_0394.jpg"); /* Specify the image URL */
   background-size: cover; /* This will make the image cover the entire element */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image within the element */

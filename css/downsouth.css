@@ -8,7 +8,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("Images/DownSouth/bckgrdBW.jpg");
+    background-image: url("../Images/DownSouth/bckgrdBW.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
