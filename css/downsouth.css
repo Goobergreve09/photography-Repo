@@ -114,7 +114,7 @@ justify-content: space-evenly;
 
 
 .george .card {
-    background-image: url(Images/DownSouth/ripleys-aquarium-smokies-exterior-2.webp);
+    background-image: url("../Images/DownSouth/ripleys-aquarium-smokies-exterior-2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
