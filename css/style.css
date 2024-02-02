@@ -1,5 +1,7 @@
+
+
 #background-photo {
-  background-image:  url("../Images/DSC_0394.jpg"); /* Specify the image URL */
+  background-image:  url("../Images/850_9464.jpg"); /* Specify the image URL */
   background-size: cover; /* This will make the image cover the entire element */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image within the element */
@@ -8,17 +10,68 @@
   height: 100vh; /* Adjust the height as needed */
 
   display: flex; /* Use flexbox layout */
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+   /* Horizontally center the content */
+ /* Vertically center the content */
   position: relative;
 }
 
-#background-photo h1 {
-  color: white;
-  font-size: 75px;
-  top:100px;
+#player {
+  display: block;
+  margin-left: 500px;
+  margin-bottom:auto;
+  margin-top: auto;
+
+ 
+}
+
+#tools-container {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-content: center;
+  background-color: black;
+  border-top: solid 2px whitesmoke;
+}
+
+#Rode-image a, #Tamron-image a, #Sigma-image a, #nikonD850-image a {
+  height: 100%;
+  display: flex;
+  align-items: center; /* Align anchor content vertically */
+  justify-content: center;
+}
+
+#Rode-image, #Tamron-image, #Sigma-image, #nikonD850-image {
+  height: auto;
+  width: 300px;
+  margin: 0;
+  border-radius: 25px;
 
 }
+
+#Rode-image {
+  order: 4;
+}
+
+#Tamron-image {
+  order: 3;
+  margin-top: 25px;
+}
+
+#Sigma-image {
+  order: 2;
+  margin-top: 35px;
+}
+
+#nikonD850-image {
+  order: 1;
+  margin-top: 10px;
+}
+
+
+
 
 
 
@@ -70,17 +123,17 @@
 
  /* Set the custom height and width for the carousel container */
  #carouselExampleCaptions {
-  width:25%; /* Adjust the width as needed */
+  width:100%; /* Adjust the width as needed */
   position: relative;
   z-index: 1;
-  left:33%;
-top:25%;
+  left:2%;
+top:20%;
 }
 
 
 /* Set a custom height for the carousel images */
 #carouselExampleCaptions .carousel-inner .carousel-item img {
-  height: 300px; /* Adjust the height as needed */
+  height: 450px; /* Adjust the height as needed */
   width: auto;
   border-radius: 25px;
 }
@@ -92,37 +145,16 @@ top:25%;
   color: black;
 }
 
-#white-background {
-  background-color:#424949;
 
-  width: 100%;
-  height: 100%;
-    opacity: 70%;
-    position: fixed;
-   z-index: 0;
 
-    /* Adjust other properties as needed */
-  }
 
-  h1 {
-    position: absolute;
- /* Adjust the top value as needed */
-    Right:6%;
-    bottom:50%; /* Adjust the left value as needed */
-    z-index: 1; /* Ensure the h1 is above the white background */
-    font-family: 'Great Vibes', cursive;
-    font-weight: lighter;
-    font-size: 42px;
-  
-
-  }
 
   
   #p-container {
     max-width: 400px;
     position: absolute;
-  bottom:56%;
-    right:6%;
+  bottom:25%;
+    right:5%;
     color: white;
     font-size: 20px;
     z-index: 1;
@@ -133,8 +165,8 @@ top:25%;
 
   #fbLogo {
     position: absolute;
-    right: 20%; /* Adjust the right value as needed */
-    bottom: 44%; /* Adjust the bottom value as needed */
+    right: 8%; /* Adjust the right value as needed */
+    /* Adjust the bottom value as needed */
     z-index: 1; /* Ensure the Facebook image is above other elements */
   }
   
@@ -144,15 +176,15 @@ top:25%;
 
   #igLogo {
     position: absolute;
-    right: 13%; /* Adjust the right value as needed */
-    bottom: 44%; /* Adjust the bottom value as needed */
+    right: 5%; /* Adjust the right value as needed */
+    /* Adjust the bottom value as needed */
     z-index: 1; /* Ensure the Facebook image is above other elements */
   }
 
   #ggLogo  {
     position: absolute;
-    right: 13%; /* Adjust the right value as needed */
-    bottom: 49%; /* Adjust the bottom value as needed */
+    right: 5%; /* Adjust the right value as needed */
+    bottom: 20%; /* Adjust the bottom value as needed */
     z-index: 1; /* Ensure the "ggLogo" image is above other elements */
   }
 

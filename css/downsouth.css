@@ -91,7 +91,7 @@ margin: auto;
     display: flex;
 align-items: center;
 justify-content: space-evenly;
-    background-image: url(Images/ke5GFrZ.jpg);
+    background-image: url("../Images/ke5GFrZ.jpg");
     transform: translateY(50px);
     margin: auto;
     margin-top: 100px;
