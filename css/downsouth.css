@@ -37,7 +37,21 @@ header img {
 
 
 
-
+#fbLogo {
+    position: absolute;
+    right: 8%; /* Adjust the right value as needed */
+    /* Adjust the bottom value as needed */
+    z-index: 1; /* Ensure the Facebook image is above other elements */
+    width: 35px;
+  }
+  
+  #igLogo {
+    position: absolute;
+    right: 5%; /* Adjust the right value as needed */
+    /* Adjust the bottom value as needed */
+    z-index: 1; /* Ensure the Facebook image is above other elements */
+    width: 55px;
+  }
 
 
 

@@ -1,7 +1,5 @@
-
-
 #background-photo {
-  background-image:  url("../Images/850_9464.jpg"); /* Specify the image URL */
+  background-image: url("../Images/IMG_20210426_085759_617.jpg"); /* Specify the image URL */
   background-size: cover; /* This will make the image cover the entire element */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image within the element */
@@ -10,20 +8,17 @@
   height: 100vh; /* Adjust the height as needed */
 
   display: flex; /* Use flexbox layout */
-   /* Horizontally center the content */
- /* Vertically center the content */
+  /* Horizontally center the content */
+  /* Vertically center the content */
   position: relative;
 }
-
-
 
 #player {
   display: block;
   margin-left: 500px;
-  margin-bottom:auto;
+  margin-bottom: auto;
   margin-top: auto;
-
- 
+  z-index: 3;
 }
 
 #tools-container {
@@ -38,21 +33,25 @@
   border-top: solid 2px whitesmoke;
 }
 
-#Rode-image a, #Tamron-image a, #Sigma-image a, #nikonD850-image a {
+#Rode-image a,
+#Tamron-image a,
+#Sigma-image a,
+#nikonD850-image a {
   height: 100%;
   display: flex;
   align-items: center; /* Align anchor content vertically */
   justify-content: center;
 }
 
-#Rode-image, #Tamron-image, #Sigma-image, #nikonD850-image {
+#Rode-image,
+#Tamron-image,
+#Sigma-image,
+#nikonD850-image {
   height: auto;
   width: 300px;
   margin: 0;
   border-radius: 25px;
-
 }
-
 
 #Rode-image {
   order: 4;
@@ -72,11 +71,6 @@
   order: 1;
   margin-top: 10px;
 }
-
-
-
-
-
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.6);
@@ -104,7 +98,6 @@
 
 #camera-clipart {
   max-width: 175px;
-
 }
 #camera-clipart img {
   width: 50%;
@@ -112,27 +105,25 @@
 }
 
 #png-me {
-    max-width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 600px;
-    display: flex;
-    justify-content: center;
-  }
+  max-width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 600px;
+  display: flex;
+  justify-content: center;
+}
 #png-me img {
-  max-width:400px;
-
+  max-width: 400px;
 }
 
- /* Set the custom height and width for the carousel container */
- #carouselExampleCaptions {
-  width:100%; /* Adjust the width as needed */
+/* Set the custom height and width for the carousel container */
+#carouselExampleCaptions {
+  width: 100%; /* Adjust the width as needed */
   position: relative;
   z-index: 1;
-  left:2%;
-top:20%;
+  left: 2%;
+  top: 20%;
 }
-
 
 /* Set a custom height for the carousel images */
 #carouselExampleCaptions .carousel-inner .carousel-item img {
@@ -148,91 +139,101 @@ top:20%;
   color: black;
 }
 
+#p-container {
+  max-width: 400px;
+  position: absolute;
+  bottom: 25%;
+  right: 5%;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+  font-family: "Spectral", serif;
+}
 
+#fbLogo {
+  position: absolute;
+  right: 8%; /* Adjust the right value as needed */
+  /* Adjust the bottom value as needed */
+  z-index: 1; /* Ensure the Facebook image is above other elements */
+  width: 35px;
+}
 
+#igLogo {
+  position: absolute;
+  right: 5%; /* Adjust the right value as needed */
+  /* Adjust the bottom value as needed */
+  z-index: 1; /* Ensure the Facebook image is above other elements */
+  width: 55px;
+}
 
+#ggLogo {
+  position: absolute;
+  right: 5%; /* Adjust the right value as needed */
+  bottom: 20%; /* Adjust the bottom value as needed */
+  z-index: 1; /* Ensure the "ggLogo" image is above other elements */
+}
 
-  
-  #p-container {
-    max-width: 400px;
-    position: absolute;
-  bottom:25%;
-    right:5%;
-    color: white;
-    font-size: 20px;
-    z-index: 1;
-    font-family: 'Spectral', serif;
-    
-   
+#ggLogo img {
+  width: 125px;
+}
+
+.dropdown-menu {
+  transition: background-color 0.4s ease; /* Adjust the duration and easing function as needed */
+}
+
+/* Change the text color of the dropdown items */
+.dropdown-menu a {
+  color: black; /* Replace 'your-text-color' with the desired text color code or name */
+  padding-top: 10px;
+}
+
+/* Change the background color of the dropdown items on hover */
+.dropdown-menu a:hover {
+  font-weight: bold; /* Replace 'your-hover-color' with the desired hover color code or name */
+  color: black;
+}
+
+@media screen and (max-width: 450px) and (min-width: 350px) {
+  #player {
+    position: fixed;
+    margin-left: 175px;
+    margin-top: 300px;
+    transform: translate(-50%, -50%);
+    width: 300px !important;
+    height: 200px !important;
+    z-index: 3; /* Ensure it's above other elements */
   }
 
-  #fbLogo {
-    position: absolute;
-    right: 8%; /* Adjust the right value as needed */
-    /* Adjust the bottom value as needed */
-    z-index: 1; /* Ensure the Facebook image is above other elements */
-    width: 35px;
+  #background-photo {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; /* Ensure it covers the entire viewport */
+    left: 0;
+    z-index: 1; /* Ensure it's below the player */
   }
-  
-
-
 
   #igLogo {
+    right: 25%;
+    bottom: 5%;
+  }
+  #fbLogo {
+    right: 40%;
+    bottom: 25%;
+  }
+
+  #tools-container {
+    flex-direction: column;
+    position: relative;
+    top: 600px;
+
+    z-index: 2;
+  }
+
+  #camera-clipart {
     position: absolute;
-    right: 5%; /* Adjust the right value as needed */
-    /* Adjust the bottom value as needed */
-    z-index: 1; /* Ensure the Facebook image is above other elements */
-    width:55px;
+    top:0;
+    left:0;
+    
   }
-
-  #ggLogo  {
-    position: absolute;
-    right: 5%; /* Adjust the right value as needed */
-    bottom: 20%; /* Adjust the bottom value as needed */
-    z-index: 1; /* Ensure the "ggLogo" image is above other elements */
-  }
-
-  #ggLogo img {
-width: 125px;
-  }
-
-  .dropdown-menu {
-    transition: background-color 0.4s ease /* Adjust the duration and easing function as needed */
-  }
-  
-  
-  /* Change the text color of the dropdown items */
-  .dropdown-menu a {
-    color: black; /* Replace 'your-text-color' with the desired text color code or name */
-    padding-top:10px;
-  }
-  
-  /* Change the background color of the dropdown items on hover */
-  .dropdown-menu a:hover {
-    font-weight: bold; /* Replace 'your-hover-color' with the desired hover color code or name */
-    color: black;
-  }
-
-  @media screen and (max-width: 450px) and (min-width:350px){
-    #p-container {
-      font-size: 16px;
-      text-align: center;
-    }
-    #background-photo h1 {
-  font-size:48px;
-  right:50px;
 }
-#carouselExampleCaptions {
-  width: 85%;
-  left: 0%;
-}
-#igLogo {
-  right: 30%; 
-  bottom: 46%;
-}
-#fbLogo {
-  right: 60%; 
-  bottom: 46%;
-}
-
-  }
